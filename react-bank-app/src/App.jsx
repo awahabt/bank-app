@@ -1,12 +1,44 @@
-import React from 'react'
-import style from './style'
+import React from "react";
+import style from "./style";
 
-import { Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, Hero } from './components';
-  
-  const App = () => (
-    <div className="w-full h-screen bg-zinc-800 ">
-      < Navbar />
+import {
+  Navbar,
+  Billing,
+  CardDeal,
+  Business,
+  Clients,
+  CTA,
+  Stats,
+  Footer,
+  Testimonials,
+  Hero,
+} from "./components";
+import styles from "./style";
+
+const App = () => (
+  <div className="bg-primary w-full overflow-hidden ">
+    <div className={`${style.paddingX} ${style.flexCenter}`}>
+      <div className={`${style.boxWidth}`}>
+        <Navbar />
+      </div>
     </div>
-  );
 
-export default App
+    <div className={`bg-primary ${style.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Hero />
+      </div>
+    </div>
+
+    <div className={`bg-primary ${style.paddingX} ${styles.flexStart}`}>
+      <div className={`${style.boxWidth}`}>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+);
+
+export default App;
