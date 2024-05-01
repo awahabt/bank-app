@@ -16,6 +16,9 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
+.bg-dimBlue{
+  background-color: #09977C1A;
+}
 
 * {
   scroll-behavior: smooth;

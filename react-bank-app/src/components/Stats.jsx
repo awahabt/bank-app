@@ -1,15 +1,17 @@
 import React from "react";
 import styles from "../style";
-import HeroStats from "./HeroStats";
+import { stats } from "../constants";
 
 const Stats = () => (
-  <div className="flex justify-between items-center flex-wrap gap-4 max-[640px]:justify-center ">
-    <HeroStats number={"3400+"} tagLine={"User Active"} />
-    <div className="w-[2px] h-[16px] bg-slate-400 max-[640px]:hidden"></div>
-    <HeroStats number={"230+"} tagLine={"Trusted By Company"} />
-    <div className="w-[2px] h-[13px] bg-slate-400 max-[640px]:hidden"></div>
-    <HeroStats number={"$230M+"} tagLine={"Transaction"} />
+  <div className={`${styles.flexCenter} flex flex-wrap sm:mb-20  mb-6`}>
+    {
+      stats.map((stat)=>(
+       <div key={stat.id} className="flex-1 flex justify-center items-center m-3">
+          <h4 className={`font-poppins font-semibold text-[40px] text-white `}>{stat.value}</h4>
+          <p className={`font-poppins text-[20px] text-gradient uppercase ml-3`}>{stat.title}</p>
+        </div>
+      ))}
+        
   </div>
 );
-
 export default Stats;
