@@ -23,14 +23,14 @@ const Navbar = () => {
         )}
       </ul>
 
-      <div className=" flex flex-1 justify-end  min-[640px]:hidden items-center">
+      <div className=" flex flex-1 justify-end  sm:hidden items-center">
         <img
           src={toggle ? close : menu}
           alt="menu"
           className="w-[28px] h=[28px] object-contain"
           onClick={() => settoggle((prev) => !prev)}
         />
-      </div>
+      
 
       <div
         className={`${
@@ -52,6 +52,7 @@ const Navbar = () => {
             );
           })}
         </ul>
+      </div>
       </div>
     </nav>
   );
