@@ -3,7 +3,8 @@
 This repository contains the React implementation of the HooBank web application.
 
 ### Design:
-![Hoobank App](https://github.com/awahabt/bank-app/assets/133004396/18666eea-161d-4b0d-80da-4139112d51e1)
+![Hoobank App](https://github.com/awahabt/bank-app/assets/133004396/d9f83093-8866-4b12-b792-3a802543789f)
+
 
 
 #### Description:
